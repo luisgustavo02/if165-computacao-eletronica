@@ -1,3 +1,5 @@
+// https://www.thehuxley.com/problem/1006
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
