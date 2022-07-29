@@ -1,7 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
+// https://www.thehuxley.com/problem/2843
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
 //BIBLIOTECAS ADICIONADAS
 
 int main() {
