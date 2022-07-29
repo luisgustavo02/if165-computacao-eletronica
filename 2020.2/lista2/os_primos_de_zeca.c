@@ -1,4 +1,4 @@
-// https://www.thehuxley.com/problem/3335
+// https://www.thehuxley.com/problem/3332
 
 #include<stdio.h>
 #include<stdlib.h>
