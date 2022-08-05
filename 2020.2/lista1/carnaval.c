@@ -8,25 +8,57 @@
 
 int main(){
 	// VARIAVEIS DECLARADAS
-	float num, soma=0, menor=10.0, maior=5.0, total;
-	int i;
+	float num1, num2, num3, num4, num5, soma = 0, menor = 10.0, maior = 5.0;
 	
-	// CICLO DAS 5 NOTAS
-	for(i=0;i<5;i++){
-		scanf(" %f", &num);
-		
-		// CASO SEJA MAIOR OU MENOR
-		if(num>maior){
-			maior = num;
-		}if(num<menor){
-			menor = num;
-		}
-		
-		soma = soma + num;
+	// ENTRADA DOS DADOS + COMPARACAO
+	
+	// NOTA 1
+	scanf(" %f", &num1);
+	if(num1 > maior){
+		maior = num1;
+	}
+	if(num1 < menor){
+		menor = num1;
+	}
+	
+	// NOTA 2
+	scanf(" %f", &num2);
+	if(num2 > maior){
+		maior = num2;
+	}
+	if(num2 < menor){
+		menor = num2;
+	}
+	
+	// NOTA 3
+	scanf(" %f", &num3);
+	if(num3 > maior){
+		maior = num3;
+	}
+	if(num3 < menor){
+		menor = num3;
+	}
+	
+	// NOTA 4
+	scanf(" %f", &num4);
+	if(num4 > maior){
+		maior = num4;
+	}
+	if(num4 < menor){
+		menor = num4;
+	}
+	
+	// NOTA 5
+	scanf(" %f", &num5);
+	if(num5 > maior){
+		maior = num5;
+	}
+	if(num5 < menor){
+		menor = num5;
 	}
 	
 	// RESULTADO
-	total = soma - menor - maior;
+	total = num1 + num2 + num3 + num4 + num5 - menor - maior;
 	printf("%.1f", total);
 	
 	return 0;
