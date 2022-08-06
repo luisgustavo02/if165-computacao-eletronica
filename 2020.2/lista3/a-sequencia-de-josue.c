@@ -54,7 +54,7 @@ int main(){
 	}else{
 		
 		// CONDICAO SEQUENCIAS
-		if(checkSeq(c1, c2) && checkSeq(c2, c3)){
+		if(checkSeq(c1, c2) && checkSeq(c2, c3) && c1 < c2 && c2 < c3){
 		
 			// CONDICAO SEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
@@ -68,7 +68,7 @@ int main(){
 		}
 		
 		// CONDICAO BISSEQUENCIA
-		else if(checkBis(c1, c2) && checkBis(c2, c3)){
+		else if(checkBis(c1, c2) && checkBis(c2, c3) && c1 < c2 && c2 < c3){
 			
 			// CONDICAO BISSEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
@@ -82,7 +82,7 @@ int main(){
 		}
 		
 		// CONDICAO TRISSEQUENCIA
-		else if(checkTris(c1, c2) && checkTris(c2, c3)){
+		else if(checkTris(c1, c2) && checkTris(c2, c3) && c1 < c2 && c2 < c3){
 			
 			// CONDICAO TRISSEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
