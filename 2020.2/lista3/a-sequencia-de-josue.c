@@ -48,13 +48,31 @@ int main(){
 	// CARACTERES INSERIDOS
 	scanf(" %c %c %c", &c1, &c2, &c3);
 	
+	// ORDENANDO OS CARACTERES
+	char aux;
+	if(c1 > c3){
+		aux = c1;
+		c1 = c3;
+		c3 = aux;
+	}
+	if(c1 > c2){
+		aux = c1;
+		c1 = c2;
+		c2 = aux;
+	}
+	if(c2 > c3){
+		aux = c2;
+		c2 = c3;
+		c3 = aux;
+	}
+	
 	// CONDICAO ETIQUETAS ERRADAS
 	if((islower(c1) || isdigit(c1)) || (islower(c2) || isdigit(c2)) || (islower(c3) || isdigit(c3))){
 		printf("Etiquetas erradas!");
 	}else{
 		
 		// CONDICAO SEQUENCIAS
-		if(checkSeq(c1, c2) && checkSeq(c2, c3) && c1 < c2 && c2 < c3){
+		if(checkSeq(c1, c2) && checkSeq(c2, c3)){
 		
 			// CONDICAO SEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
@@ -68,7 +86,7 @@ int main(){
 		}
 		
 		// CONDICAO BISSEQUENCIA
-		else if(checkBis(c1, c2) && checkBis(c2, c3) && c1 < c2 && c2 < c3){
+		else if(checkBis(c1, c2) && checkBis(c2, c3)){
 			
 			// CONDICAO BISSEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
@@ -82,7 +100,7 @@ int main(){
 		}
 		
 		// CONDICAO TRISSEQUENCIA
-		else if(checkTris(c1, c2) && checkTris(c2, c3) && c1 < c2 && c2 < c3){
+		else if(checkTris(c1, c2) && checkTris(c2, c3)){
 			
 			// CONDICAO TRISSEQUENCIA QUASE PERFEITA
 			if(checkVog(c1) || checkVog(c2) || checkVog(c3)){
