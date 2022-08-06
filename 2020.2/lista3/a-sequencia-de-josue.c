@@ -99,6 +99,7 @@ int main(){
 		else{
 			printf("Só umas letras ai...");
 		}
+    }
 	
 	return 0;
-} 
+}
