@@ -1,2 +1,2 @@
 # if165-computacao-eletronica
-Listas de exercícios da disciplina de Computação Eletrônica da UFPE
+Listas de exercícios e anotações da disciplina de Computação Eletrônica da UFPE
