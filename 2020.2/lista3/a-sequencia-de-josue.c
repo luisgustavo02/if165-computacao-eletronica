@@ -8,6 +8,7 @@
 #include<locale.h>
 //BIBLIOTECAS ADICIONADAS
 
+// FUNÇÃO CHECAR SEQUENCIA
 int checkSeq(char x, char y){
 	if(x == y-1){
 		return 1;
@@ -16,6 +17,7 @@ int checkSeq(char x, char y){
 	}
 }
 
+// FUNÇÃO CHECAR BISSEQUENCIA
 int checkBis(char x, char y){
 	if(x == y-2){
 		return 1;
@@ -24,6 +26,7 @@ int checkBis(char x, char y){
 	}
 }
 
+// FUNCAO CHECAR TRISSEQUENCIA
 int checkTris(char x, char y){
 	if(x == y-3){
 		return 1;
@@ -32,6 +35,7 @@ int checkTris(char x, char y){
 	}
 }
 
+// CHECAR VOGAIS MAIUSCULAS
 int checkVog(int x){
 	if(x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U'){
 		return 1;
