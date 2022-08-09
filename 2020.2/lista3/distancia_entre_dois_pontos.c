@@ -7,14 +7,14 @@
 // BIBLIOTECAS ADICIONADAS
 
 int main(){
-  // DECLARACAO DE VARIAVEIS
+	// DECLARACAO DE VARIAVEIS
 	int xa, ya, xb, yb;
 	int deltax, deltay, distancia;
 	
 	//DADOS INSERIDOS
 	scanf(" %i %i %i %i", &xa, &ya, &xb, &yb);
   
-  // 	CALCULO DA DISTANCIA
+	// CALCULO DA DISTANCIA
 	deltax = (xa - xb);
 	deltay = (ya - yb);
 	distancia = sqrt(pow(deltax, 2) + pow(deltay, 2));
