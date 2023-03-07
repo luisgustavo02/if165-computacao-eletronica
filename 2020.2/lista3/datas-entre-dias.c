@@ -200,7 +200,8 @@ int main(){
     // IMPRIMINDO RESULTADOS NA TELA
     
     // DATA
-    if(diaMedio < 10 && mesMedio < 10){
+    printf("%02d/%02d/%d ", diaMedio, mesMedio, anoMedio);
+    /*if(diaMedio < 10 && mesMedio < 10){
         printf("0%d/0%d/%d ", diaMedio, mesMedio, anoMedio);
     }else if(diaMedio < 10 && mesMedio >= 10){
         printf("0%d/%d/%d ", diaMedio, mesMedio, anoMedio);
@@ -208,7 +209,7 @@ int main(){
         printf("%d/0%d/%d ", diaMedio, mesMedio, anoMedio);
     }else{
         printf("%d/%d/%d ", diaMedio, mesMedio, anoMedio);
-    }
+    }*/
     
     // HORA
     if(hora){
